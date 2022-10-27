@@ -844,9 +844,14 @@ table {
     color: #36337A;
     outline: none;
     border: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
   .new-form-page .new-form__pacient {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 55px; }
   .new-form-page .new-form__radio-list {
     display: flex;
     justify-content: start;
