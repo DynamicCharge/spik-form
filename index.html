@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="only light">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>СПИК - форма</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"> -->
+    <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
+<script defer="defer" src="./assets/scripts/main.js"></script><link href="./assets/styles/main..css" rel="stylesheet"></head>
+<body>
+    <main>
+
+        <section class="new-form-page">
+            <div class="container">
+                <div class="new-form__wrapper">
+                    
+                    <div class="new-form__left">
+                        <h1 class="new-form__header">Справка о предоставлении медицинских услуг</h1>
+                        <form action="" class="new-form__form">
+                            <span class="new-form__header_sub">Заполните форму</span>
+                            <div class="new-form__group">
+                                <span class="new-form__group__header">Информация о плательщике</span>
+                                <input type="text" name="name" placeholder="Имя" class="new-form__input">
+                                <input type="text" name="surname" placeholder="Фамилия" class="new-form__input">
+                                <input type="text" name="patronymic" placeholder="Отчество" class="new-form__input">
+                                <input type="text" name="phone" placeholder="Телефон" class="new-form__input">
+                                <input type="text" name="mail" placeholder="E-mail" class="new-form__input">
+                                <input type="text" name="inn" placeholder="ИНН" class="new-form__input">
+                            </div>
+                            <div class="new-form__pacient">
+                                <div class="new-form__group">
+                                    <span class="new-form__group__header">Информация о пациенте</span>
+                                    <select name="who" class="new-form__select">
+                                        <option value="Супругу">Супругу</option>
+                                        <option value="Супруге">Супруге</option>
+                                        <option value="Матери">Матери</option>
+                                        <option value="Отцу">Отцу</option>
+                                        <option value="Сыну">Сыну</option>
+                                        <option value="Дочери">Дочери</option>
+                                    </select>
+                                    <input type="text" name="pacient-name" placeholder="Имя" class="new-form__input">
+                                    <input type="text" name="pacient-surname" placeholder="Фамилия" class="new-form__input">
+                                    <input type="text" name="pacient-patronymic" placeholder="Отчество" class="new-form__input">
+                                    <input type="text" name="pacient-birth" placeholder="Дата рождения" class="new-form__input">
+    
+                                    <div class="new-form__add">+ Добавить еще пациента</div>
+                                </div>
+                                <div class="new-form__group _second">
+                                    <span class="new-form__group__header">Информация о пациенте 2</span>
+                                    <select name="who2" class="new-form__select">
+                                        <option value="Супругу">Супругу</option>
+                                        <option value="Супруге">Супруге</option>
+                                        <option value="Матери">Матери</option>
+                                        <option value="Отцу">Отцу</option>
+                                        <option value="Сыну">Сыну</option>
+                                        <option value="Дочери">Дочери</option>
+                                    </select>
+                                    <input type="text" name="pacient2-name" placeholder="Имя" class="new-form__input">
+                                    <input type="text" name="pacient2-surname" placeholder="Фамилия" class="new-form__input">
+                                    <input type="text" name="pacient2-patronymic" placeholder="Отчество" class="new-form__input">
+                                    <input type="text" name="pacient2-birth" placeholder="Дата рождения" class="new-form__input">
+    
+                                </div>
+                            </div>
+                            <div class="new-form__group">
+                                <span class="new-form__group__header">За какой период выдать справку?</span>
+                                <ul class="new-form__radio-list">
+                                    <li class="new-form__list-item">
+                                        <label>
+                                            <input type="radio" name="year" value="2019" class="new-form__radio">
+                                            <span>2019</span>
+                                        </label>
+                                    </li>
+                                    <li class="new-form__list-item">
+                                        <label>
+                                            <input type="radio" name="year" value="2020" class="new-form__radio">
+                                            <span>2020</span>
+                                        </label>
+                                    </li>
+                                    <li class="new-form__list-item">
+                                        <label>
+                                            <input type="radio" name="year" value="2021" class="new-form__radio">
+                                            <span>2021</span>
+                                        </label>
+                                    </li>
+                                    <li class="new-form__list-item">
+                                        <label>
+                                            <input type="radio" name="year" value="2022" checked="checked" class="new-form__radio">
+                                            <span>2022</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="new-form__group">
+                                <span class="new-form__group__header">Куда отправить справку?</span>
+                                <select name="where" class="new-form__select">
+                                    <option value="Домой">Домой</option>
+                                    <option value="В офис">В офис</option>
+                                </select>
+                                <label class="new-form__personal">
+                                    <input type="checkbox" required>
+                                    Отправляя персональные данные из этой формы, вы даете согласие на обработку персональных данных
+                                </label>
+                                <div class="new-form__group__wrapper">
+                                    <div class="new-form__capcha"></div>
+                                    <button class="new-form__submit">
+                                        Записаться                                        
+                                    </button>
+                                </div>
+                            </div>                            
+                        </form>
+                    </div>
+                    <div class="new-form__right">
+                        <p class="new-form__desc">
+                            Для подачи заявления на предоставление справки об оплате медицинских услуг в налоговые органы РФ (по форме, утвержденной совместным Приказом Минздрава России и МНС России от 25.07.2001 № 289/БГ-3-04/256) необходимо заполнить форму.
+                            <br><br> 
+                            «Пожалуйста, убедитесь в том, что все поля формы заполнены корректно»
+                        </p>
+                        <span class="big">Полезные ссылки</span>
+                        <a href="#" class="new-form__link"><img src="assets/img/info..svg" alt=""> Блог</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
+
